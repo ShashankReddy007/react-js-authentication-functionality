@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 import Header from '../Header'
 import './index.css'
 
-const Home = () => {
+const Home = props => {
   const logoutFunction = () => {
     const {history} = props
     Cookies.remove('jwt_token')
